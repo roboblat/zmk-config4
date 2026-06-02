@@ -64,6 +64,7 @@
  * SENSITIVITY: scalers are <multiplier divisor>; 1 1 = 1.0x.
  */
 &tps43_split {
+    status = "okay";
     device = <&tps43>;
     input-processors =
         <&trackpad_transform (INPUT_TRANSFORM_X_INVERT)>,
