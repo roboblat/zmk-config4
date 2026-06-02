@@ -17,6 +17,11 @@
         tps43_split: tps43_split@0 {
             compatible = "zmk,input-split";
             reg = <0>;
+            /* Disabled by default. Enabled on the RIGHT peripheral (which sets
+               its `device`) and on the dongle/central (which consumes it via
+               the listener). Left MUST leave it disabled - an enabled input-
+               split with no `device` fails a build assertion. */
+            status = "disabled";
         };
     };
 
