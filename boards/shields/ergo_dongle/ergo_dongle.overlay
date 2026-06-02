@@ -35,7 +35,7 @@
         compatible = "zmk,matrix-transform";
         columns = <11>;
         rows = <6>;
-        map = 
+        map = <
             /* ---- LEFT half: logical columns 0..4 (column-major) ---- */
             RC(0,0) RC(1,0) RC(2,0) RC(3,0) RC(4,0) RC(5,0)
             RC(0,1) RC(1,1) RC(2,1) RC(3,1) RC(4,1) RC(5,1)
