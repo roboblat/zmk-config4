@@ -1,0 +1,9 @@
+/*
+ * The dongle is the central, so it runs the actual keymap (layers, combos,
+ * behaviors). Rather than duplicate it, include the keyboard's keymap so
+ * there's ONE source of truth - edit ergo.keymap and the dongle picks it up.
+ *
+ * The keymap references the matrix transform + physical layout, which are
+ * provided by ergo_dongle.overlay (the dongle's own copies).
+ */
+#include "../ergo/ergo.keymap"
